@@ -1,1 +1,1 @@
-test('framework check', () => expect(true).toBe(true))
+test('framework check', () => expect(true).toBe(true));
