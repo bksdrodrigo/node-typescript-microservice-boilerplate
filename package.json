@@ -1,7 +1,7 @@
 {
-  "name": "typescript-lib-boilerplate",
-  "version": "1.0.6",
-  "description": "Typescript Library Boilerplate",
+  "name": "typescript-microservice-boilerplate",
+  "version": "1.0.0",
+  "description": "Typescript Microservice Boilerplate",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -16,18 +16,18 @@
     "postversion": "git push && git push --tags",
     "bumpversion": "npm version patch && npm publish"
   },
-  "homepage": "https://github.com/bksdrodrigo/node-typescript-lib-boilerplate/#readme",
+  "homepage": "https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git/#readme",
   "bugs": {
-    "url": "https://github.com/bksdrodrigo/node-typescript-lib-boilerplate/issues"
+    "url": "https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bksdrodrigo/node-typescript-lib-boilerplate.git"
+    "url": "git+https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git.git"
   },
   "keywords": [
     "Typescript",
     "Node",
-    "Library",
+    "Microservice",
     "Boilerplate"
   ],
   "author": "Suren Rodrigo",
@@ -43,8 +43,5 @@
   },
   "files": [
     "lib/**/*"
-  ],
-  "publishConfig": {
-    "registry": "http://localhost:8081/repository/nbe-repo-hosted/"
-  }
+  ]
 }
