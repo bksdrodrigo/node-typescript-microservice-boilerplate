@@ -10,11 +10,10 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint && npm run format",
     "version": "npm test && git add -A src",
     "postversion": "git push && git push --tags",
-    "bumpversion": "npm version patch && npm publish"
+    "bumpversion": "npm version patch"
   },
   "homepage": "https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git/#readme",
   "bugs": {
