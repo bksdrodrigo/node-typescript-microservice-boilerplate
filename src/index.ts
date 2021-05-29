@@ -1,16 +1,16 @@
 import * as dotenv from "dotenv";
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
+import { NBEBaseServer } from '@nbe/nbe-server-base';
+import { HttpMethod } from "@nbe/nbe-server-base/lib/common-domain/http-common";
+import {helloWorldHandler} from './routes';
 
 if (process.env.NODE_ENV !== 'production') dotenv.config();
 const port  = process.env.PORT || 3000;
 const hostname = process.env.HOST || '0.0.0.0';
-const app = express();
+const nbeServer = new NBEBaseServer();
+nbeServer.createRoute('/api/hello');
+nbeServer.addSubRoutes('/api/hello', '/', HttpMethod.GET, helloWorldHandler)
+const app = nbeServer.getServer();
 
-app.use(helmet());
-app.use(cors());
-app.use(express.json());
 
 app.listen(port, hostname, () => {
   console.log(`Application running on http://${hostname}:${port}`)
