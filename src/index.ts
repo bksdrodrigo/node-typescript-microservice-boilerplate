@@ -13,5 +13,5 @@ const app = nbeServer.getServer();
 
 
 app.listen(port, hostname, () => {
-  console.log(`Application running on http://${hostname}:${port}`)
+  const message = `Application running on http://${hostname}:${port}`;
 })
