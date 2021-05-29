@@ -48,7 +48,8 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@nbe/nbe-server-base": "^1.0.2",
+    "@nbe/nbe-commono-utils": "^1.0.2",
+    "@nbe/nbe-server-base": "^1.0.3",
     "dotenv": "^10.0.0"
   }
 }
