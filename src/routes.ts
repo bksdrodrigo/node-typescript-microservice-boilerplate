@@ -9,7 +9,7 @@ export const calcAdd = async (req: any, res: any) => {
   logInfo('Request to Calculator Add Method');
   const firstNumber = parseInt(req.params.first, 10) || 0;
   const secondNumber = parseInt(req.params.second, 10) || 0;
-  const result = firstNumber + secondNumber
+  const result = firstNumber + secondNumber;
   logDebug(`Input values: ${firstNumber}, ${secondNumber} and Result: ${result}`);
   nbeSend(200, { operation: 'add', firstNumber, secondNumber, result }, res);
 };
