@@ -1,5 +1,5 @@
 {
-  "name": "typescript-microservice-boilerplate",
+  "name": "nbe-server-boilerplate",
   "version": "1.0.4",
   "description": "Typescript Microservice Boilerplate",
   "main": "lib/index.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git.git"
+    "url": "git+https://github.com/bksdrodrigo/node-typescript-microservice-boilerplate.git"
   },
   "keywords": [
     "Typescript",
@@ -48,8 +48,8 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "@nbe/nbe-commono-utils": "^1.0.2",
-    "@nbe/nbe-server-base": "^1.0.3",
+    "@bksdrodrigo/nbe-commono-utils": "^1.0.3",
+    "@bksdrodrigo/nbe-server-base": "^1.0.6",
     "dotenv": "^10.0.0"
   }
 }
