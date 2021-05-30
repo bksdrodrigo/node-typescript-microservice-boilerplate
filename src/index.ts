@@ -11,7 +11,7 @@ const nbeServer = new NBEBaseServer();
 nbeServer.createRoute('/api/hello');
 nbeServer.addSubRoutes('/api/hello', '/', HttpMethod.GET, helloWorldHandler);
 
-//calc routes
+// calc routes
 nbeServer.createRoute('/api/calc');
 nbeServer.addSubRoutes('/api/calc', '/add/:first/:second', HttpMethod.GET, calcAdd);
 const app = nbeServer.getServer();
