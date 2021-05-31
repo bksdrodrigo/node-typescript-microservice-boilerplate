@@ -1,5 +1,5 @@
 ARG PORT=7000
-FROM node:14.17-alpine as node
+FROM node:14-alpine as node
 
 # Builder Stage
 FROM node as builder
@@ -39,3 +39,4 @@ COPY --chown=node:node --from=builder /app/dist ./dist
 # Open desired port
 EXPOSE ${PORT}
 ENTRYPOINT ["pm2-runtime", "./process.yml"]
+# ENTRYPOINT ["node", "./dist/index.js"]
